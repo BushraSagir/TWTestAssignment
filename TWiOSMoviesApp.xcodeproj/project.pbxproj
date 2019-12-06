@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21F10C437112F5A16F56AA64 /* Pods_TWiOSMoviesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C96FAFBCD93769023E2AB60 /* Pods_TWiOSMoviesApp.framework */; };
+		751C47632A8D5AB31F6B602F /* Pods_TWiOSMoviesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21DEC7BD67C4C5D275E3714 /* Pods_TWiOSMoviesAppUITests.framework */; };
+		E224DFDA2393983D000228F9 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = E224DFD92393983D000228F9 /* test.m */; };
+		E2AA1B6A237E58F500A0D1BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA1B69237E58F500A0D1BA /* AppDelegate.swift */; };
+		E2AA1B6C237E58F500A0D1BA /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA1B6B237E58F500A0D1BA /* MoviesViewController.swift */; };
+		E2AA1B6F237E58F500A0D1BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AA1B6D237E58F500A0D1BA /* Main.storyboard */; };
+		E2AA1B71237E58F700A0D1BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2AA1B70237E58F700A0D1BA /* Assets.xcassets */; };
+		E2AA1B74237E58F700A0D1BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AA1B72237E58F700A0D1BA /* LaunchScreen.storyboard */; };
+		E2AA1B7F237E58F700A0D1BA /* TWiOSMoviesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA1B7E237E58F700A0D1BA /* TWiOSMoviesAppTests.swift */; };
+		E2AA1B8A237E58F700A0D1BA /* TWiOSMoviesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA1B89237E58F700A0D1BA /* TWiOSMoviesAppUITests.swift */; };
+		E2AA1B98237E5BE200A0D1BA /* MoviesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA1B97237E5BE200A0D1BA /* MoviesListCell.swift */; };
+		E2AA1B9A237E677900A0D1BA /* MoviesGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA1B99237E677900A0D1BA /* MoviesGridCell.swift */; };
+		E2AA1B9E237E6B0300A0D1BA /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA1B9D237E6B0300A0D1BA /* WebServiceHandler.swift */; };
+		E2AA1BA1237E6B7F00A0D1BA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA1BA0237E6B7F00A0D1BA /* Movie.swift */; };
+		E2AA1BA4237E728000A0D1BA /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA1BA3237E728000A0D1BA /* MoviesViewModel.swift */; };
+		FE72C00C05B7C0353E8B69E5 /* Pods_TWiOSMoviesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E5433C7C13BCA9E4FD947E /* Pods_TWiOSMoviesAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2AA1B7B237E58F700A0D1BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2AA1B5E237E58F500A0D1BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2AA1B65237E58F500A0D1BA;
+			remoteInfo = TWiOSMoviesApp;
+		};
+		E2AA1B86237E58F700A0D1BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2AA1B5E237E58F500A0D1BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2AA1B65237E58F500A0D1BA;
+			remoteInfo = TWiOSMoviesApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C96FAFBCD93769023E2AB60 /* Pods_TWiOSMoviesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWiOSMoviesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F72A732AE4943623B9B70F3 /* Pods-TWiOSMoviesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWiOSMoviesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TWiOSMoviesAppTests/Pods-TWiOSMoviesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		47F7F0CE746F48480A13EE87 /* Pods-TWiOSMoviesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWiOSMoviesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TWiOSMoviesAppUITests/Pods-TWiOSMoviesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F30A78E5CE955D0EA711701 /* Pods-TWiOSMoviesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWiOSMoviesAppTests.release.xcconfig"; path = "Target Support Files/Pods-TWiOSMoviesAppTests/Pods-TWiOSMoviesAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E5F86B5FC6F8D47EC7F69FE /* Pods-TWiOSMoviesAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWiOSMoviesAppUITests.release.xcconfig"; path = "Target Support Files/Pods-TWiOSMoviesAppUITests/Pods-TWiOSMoviesAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9D7F948FBE723411EFEF70FC /* Pods-TWiOSMoviesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWiOSMoviesApp.debug.xcconfig"; path = "Target Support Files/Pods-TWiOSMoviesApp/Pods-TWiOSMoviesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A21DEC7BD67C4C5D275E3714 /* Pods_TWiOSMoviesAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWiOSMoviesAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E5433C7C13BCA9E4FD947E /* Pods_TWiOSMoviesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWiOSMoviesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E224DFD92393983D000228F9 /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		E2AA1B66237E58F500A0D1BA /* TWiOSMoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWiOSMoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2AA1B69237E58F500A0D1BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2AA1B6B237E58F500A0D1BA /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		E2AA1B6E237E58F500A0D1BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2AA1B70237E58F700A0D1BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2AA1B73237E58F700A0D1BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2AA1B75237E58F700A0D1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2AA1B7A237E58F700A0D1BA /* TWiOSMoviesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWiOSMoviesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2AA1B7E237E58F700A0D1BA /* TWiOSMoviesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWiOSMoviesAppTests.swift; sourceTree = "<group>"; };
+		E2AA1B80237E58F700A0D1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2AA1B85237E58F700A0D1BA /* TWiOSMoviesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWiOSMoviesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2AA1B89237E58F700A0D1BA /* TWiOSMoviesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWiOSMoviesAppUITests.swift; sourceTree = "<group>"; };
+		E2AA1B8B237E58F700A0D1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2AA1B97237E5BE200A0D1BA /* MoviesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListCell.swift; sourceTree = "<group>"; };
+		E2AA1B99237E677900A0D1BA /* MoviesGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesGridCell.swift; sourceTree = "<group>"; };
+		E2AA1B9D237E6B0300A0D1BA /* WebServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
+		E2AA1BA0237E6B7F00A0D1BA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		E2AA1BA3237E728000A0D1BA /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
+		FA5ECB1C5EE0871CFEFBC5C3 /* Pods-TWiOSMoviesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWiOSMoviesApp.release.xcconfig"; path = "Target Support Files/Pods-TWiOSMoviesApp/Pods-TWiOSMoviesApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2AA1B63237E58F500A0D1BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F10C437112F5A16F56AA64 /* Pods_TWiOSMoviesApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2AA1B77237E58F700A0D1BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE72C00C05B7C0353E8B69E5 /* Pods_TWiOSMoviesAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2AA1B82237E58F700A0D1BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751C47632A8D5AB31F6B602F /* Pods_TWiOSMoviesAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95CC3946D04210A9740D3AA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C96FAFBCD93769023E2AB60 /* Pods_TWiOSMoviesApp.framework */,
+				C8E5433C7C13BCA9E4FD947E /* Pods_TWiOSMoviesAppTests.framework */,
+				A21DEC7BD67C4C5D275E3714 /* Pods_TWiOSMoviesAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D494373179F76577A6173F3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D7F948FBE723411EFEF70FC /* Pods-TWiOSMoviesApp.debug.xcconfig */,
+				FA5ECB1C5EE0871CFEFBC5C3 /* Pods-TWiOSMoviesApp.release.xcconfig */,
+				3F72A732AE4943623B9B70F3 /* Pods-TWiOSMoviesAppTests.debug.xcconfig */,
+				6F30A78E5CE955D0EA711701 /* Pods-TWiOSMoviesAppTests.release.xcconfig */,
+				47F7F0CE746F48480A13EE87 /* Pods-TWiOSMoviesAppUITests.debug.xcconfig */,
+				7E5F86B5FC6F8D47EC7F69FE /* Pods-TWiOSMoviesAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2AA1B5D237E58F500A0D1BA = {
+			isa = PBXGroup;
+			children = (
+				E2AA1B68237E58F500A0D1BA /* TWiOSMoviesApp */,
+				E2AA1B7D237E58F700A0D1BA /* TWiOSMoviesAppTests */,
+				E2AA1B88237E58F700A0D1BA /* TWiOSMoviesAppUITests */,
+				E2AA1B67237E58F500A0D1BA /* Products */,
+				D494373179F76577A6173F3E /* Pods */,
+				95CC3946D04210A9740D3AA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2AA1B67237E58F500A0D1BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA1B66237E58F500A0D1BA /* TWiOSMoviesApp.app */,
+				E2AA1B7A237E58F700A0D1BA /* TWiOSMoviesAppTests.xctest */,
+				E2AA1B85237E58F700A0D1BA /* TWiOSMoviesAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2AA1B68237E58F500A0D1BA /* TWiOSMoviesApp */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA1BA2237E724C00A0D1BA /* ViewModel */,
+				E2AA1B9F237E6B6B00A0D1BA /* Model */,
+				E2AA1B9C237E6AAE00A0D1BA /* Network */,
+				E2AA1B69237E58F500A0D1BA /* AppDelegate.swift */,
+				E2AA1B6B237E58F500A0D1BA /* MoviesViewController.swift */,
+				E2AA1B70237E58F700A0D1BA /* Assets.xcassets */,
+				E2AA1B72237E58F700A0D1BA /* LaunchScreen.storyboard */,
+				E2AA1B75237E58F700A0D1BA /* Info.plist */,
+				E2AA1B9B237E69A100A0D1BA /* View */,
+			);
+			path = TWiOSMoviesApp;
+			sourceTree = "<group>";
+		};
+		E2AA1B7D237E58F700A0D1BA /* TWiOSMoviesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA1B7E237E58F700A0D1BA /* TWiOSMoviesAppTests.swift */,
+				E2AA1B80237E58F700A0D1BA /* Info.plist */,
+			);
+			path = TWiOSMoviesAppTests;
+			sourceTree = "<group>";
+		};
+		E2AA1B88237E58F700A0D1BA /* TWiOSMoviesAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA1B89237E58F700A0D1BA /* TWiOSMoviesAppUITests.swift */,
+				E2AA1B8B237E58F700A0D1BA /* Info.plist */,
+			);
+			path = TWiOSMoviesAppUITests;
+			sourceTree = "<group>";
+		};
+		E2AA1B9B237E69A100A0D1BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA1B6D237E58F500A0D1BA /* Main.storyboard */,
+				E2AA1B97237E5BE200A0D1BA /* MoviesListCell.swift */,
+				E2AA1B99237E677900A0D1BA /* MoviesGridCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2AA1B9C237E6AAE00A0D1BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA1B9D237E6B0300A0D1BA /* WebServiceHandler.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E2AA1B9F237E6B6B00A0D1BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA1BA0237E6B7F00A0D1BA /* Movie.swift */,
+				E224DFD92393983D000228F9 /* test.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2AA1BA2237E724C00A0D1BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA1BA3237E728000A0D1BA /* MoviesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2AA1B65237E58F500A0D1BA /* TWiOSMoviesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2AA1B8E237E58F700A0D1BA /* Build configuration list for PBXNativeTarget "TWiOSMoviesApp" */;
+			buildPhases = (
+				B0C6A0D9B5DB18490B829DDE /* [CP] Check Pods Manifest.lock */,
+				E2AA1B62237E58F500A0D1BA /* Sources */,
+				E2AA1B63237E58F500A0D1BA /* Frameworks */,
+				E2AA1B64237E58F500A0D1BA /* Resources */,
+				E9B5374602AE5D5DFF1FB89D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TWiOSMoviesApp;
+			productName = TWiOSMoviesApp;
+			productReference = E2AA1B66237E58F500A0D1BA /* TWiOSMoviesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2AA1B79237E58F700A0D1BA /* TWiOSMoviesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2AA1B91237E58F700A0D1BA /* Build configuration list for PBXNativeTarget "TWiOSMoviesAppTests" */;
+			buildPhases = (
+				763EF9E17E73A84E85967608 /* [CP] Check Pods Manifest.lock */,
+				E2AA1B76237E58F700A0D1BA /* Sources */,
+				E2AA1B77237E58F700A0D1BA /* Frameworks */,
+				E2AA1B78237E58F700A0D1BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2AA1B7C237E58F700A0D1BA /* PBXTargetDependency */,
+			);
+			name = TWiOSMoviesAppTests;
+			productName = TWiOSMoviesAppTests;
+			productReference = E2AA1B7A237E58F700A0D1BA /* TWiOSMoviesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2AA1B84237E58F700A0D1BA /* TWiOSMoviesAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2AA1B94237E58F700A0D1BA /* Build configuration list for PBXNativeTarget "TWiOSMoviesAppUITests" */;
+			buildPhases = (
+				7D650617B27455A056B77B2C /* [CP] Check Pods Manifest.lock */,
+				E2AA1B81237E58F700A0D1BA /* Sources */,
+				E2AA1B82237E58F700A0D1BA /* Frameworks */,
+				E2AA1B83237E58F700A0D1BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2AA1B87237E58F700A0D1BA /* PBXTargetDependency */,
+			);
+			name = TWiOSMoviesAppUITests;
+			productName = TWiOSMoviesAppUITests;
+			productReference = E2AA1B85237E58F700A0D1BA /* TWiOSMoviesAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2AA1B5E237E58F500A0D1BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = bushraSagir;
+				TargetAttributes = {
+					E2AA1B65237E58F500A0D1BA = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+					E2AA1B79237E58F700A0D1BA = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = E2AA1B65237E58F500A0D1BA;
+					};
+					E2AA1B84237E58F700A0D1BA = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = E2AA1B65237E58F500A0D1BA;
+					};
+				};
+			};
+			buildConfigurationList = E2AA1B61237E58F500A0D1BA /* Build configuration list for PBXProject "TWiOSMoviesApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2AA1B5D237E58F500A0D1BA;
+			productRefGroup = E2AA1B67237E58F500A0D1BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2AA1B65237E58F500A0D1BA /* TWiOSMoviesApp */,
+				E2AA1B79237E58F700A0D1BA /* TWiOSMoviesAppTests */,
+				E2AA1B84237E58F700A0D1BA /* TWiOSMoviesAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2AA1B64237E58F500A0D1BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2AA1B74237E58F700A0D1BA /* LaunchScreen.storyboard in Resources */,
+				E2AA1B71237E58F700A0D1BA /* Assets.xcassets in Resources */,
+				E2AA1B6F237E58F500A0D1BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2AA1B78237E58F700A0D1BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2AA1B83237E58F700A0D1BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		763EF9E17E73A84E85967608 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TWiOSMoviesAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D650617B27455A056B77B2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TWiOSMoviesAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0C6A0D9B5DB18490B829DDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TWiOSMoviesApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9B5374602AE5D5DFF1FB89D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TWiOSMoviesApp/Pods-TWiOSMoviesApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TWiOSMoviesApp/Pods-TWiOSMoviesApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TWiOSMoviesApp/Pods-TWiOSMoviesApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2AA1B62237E58F500A0D1BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2AA1B9A237E677900A0D1BA /* MoviesGridCell.swift in Sources */,
+				E224DFDA2393983D000228F9 /* test.m in Sources */,
+				E2AA1B6C237E58F500A0D1BA /* MoviesViewController.swift in Sources */,
+				E2AA1BA1237E6B7F00A0D1BA /* Movie.swift in Sources */,
+				E2AA1B9E237E6B0300A0D1BA /* WebServiceHandler.swift in Sources */,
+				E2AA1BA4237E728000A0D1BA /* MoviesViewModel.swift in Sources */,
+				E2AA1B98237E5BE200A0D1BA /* MoviesListCell.swift in Sources */,
+				E2AA1B6A237E58F500A0D1BA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2AA1B76237E58F700A0D1BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2AA1B7F237E58F700A0D1BA /* TWiOSMoviesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2AA1B81237E58F700A0D1BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2AA1B8A237E58F700A0D1BA /* TWiOSMoviesAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2AA1B7C237E58F700A0D1BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2AA1B65237E58F500A0D1BA /* TWiOSMoviesApp */;
+			targetProxy = E2AA1B7B237E58F700A0D1BA /* PBXContainerItemProxy */;
+		};
+		E2AA1B87237E58F700A0D1BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2AA1B65237E58F500A0D1BA /* TWiOSMoviesApp */;
+			targetProxy = E2AA1B86237E58F700A0D1BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2AA1B6D237E58F500A0D1BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2AA1B6E237E58F500A0D1BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2AA1B72237E58F700A0D1BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2AA1B73237E58F700A0D1BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2AA1B8C237E58F700A0D1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2AA1B8D237E58F700A0D1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2AA1B8F237E58F700A0D1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D7F948FBE723411EFEF70FC /* Pods-TWiOSMoviesApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34R474CCKX;
+				INFOPLIST_FILE = TWiOSMoviesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bushraSagir.TestAssignment.TWiOSMoviesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2AA1B90237E58F700A0D1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5ECB1C5EE0871CFEFBC5C3 /* Pods-TWiOSMoviesApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34R474CCKX;
+				INFOPLIST_FILE = TWiOSMoviesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bushraSagir.TestAssignment.TWiOSMoviesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E2AA1B92237E58F700A0D1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F72A732AE4943623B9B70F3 /* Pods-TWiOSMoviesAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TWiOSMoviesAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bushraSagir.TestAssignment.TWiOSMoviesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWiOSMoviesApp.app/TWiOSMoviesApp";
+			};
+			name = Debug;
+		};
+		E2AA1B93237E58F700A0D1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F30A78E5CE955D0EA711701 /* Pods-TWiOSMoviesAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TWiOSMoviesAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bushraSagir.TestAssignment.TWiOSMoviesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWiOSMoviesApp.app/TWiOSMoviesApp";
+			};
+			name = Release;
+		};
+		E2AA1B95237E58F700A0D1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F7F0CE746F48480A13EE87 /* Pods-TWiOSMoviesAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TWiOSMoviesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bushraSagir.TestAssignment.TWiOSMoviesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TWiOSMoviesApp;
+			};
+			name = Debug;
+		};
+		E2AA1B96237E58F700A0D1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E5F86B5FC6F8D47EC7F69FE /* Pods-TWiOSMoviesAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TWiOSMoviesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bushraSagir.TestAssignment.TWiOSMoviesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TWiOSMoviesApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2AA1B61237E58F500A0D1BA /* Build configuration list for PBXProject "TWiOSMoviesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2AA1B8C237E58F700A0D1BA /* Debug */,
+				E2AA1B8D237E58F700A0D1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2AA1B8E237E58F700A0D1BA /* Build configuration list for PBXNativeTarget "TWiOSMoviesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2AA1B8F237E58F700A0D1BA /* Debug */,
+				E2AA1B90237E58F700A0D1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2AA1B91237E58F700A0D1BA /* Build configuration list for PBXNativeTarget "TWiOSMoviesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2AA1B92237E58F700A0D1BA /* Debug */,
+				E2AA1B93237E58F700A0D1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2AA1B94237E58F700A0D1BA /* Build configuration list for PBXNativeTarget "TWiOSMoviesAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2AA1B95237E58F700A0D1BA /* Debug */,
+				E2AA1B96237E58F700A0D1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2AA1B5E237E58F500A0D1BA /* Project object */;
+}
